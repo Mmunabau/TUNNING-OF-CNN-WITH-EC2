@@ -34,38 +34,59 @@ Additionally, the project will explore performance optimization techniques such 
 <h2>Program walk-through:</h2>
 
 <p align="center">
-Creat a sagemaker Domain launch tap the sagemaker canvas: <br/>
- <img src="image/sg-1.jpg" height="80%" width="80%" alt="TF-IDF Steps"/>
+Navigate to EC2 and select an AMI that sweetable for Tensorflow : <br/>
+ <img src="image/dl1.png" height="80%" width="80%" alt="TF-IDF Steps"/>
 <br />
  
 <br />
-Navigate to your s3 bucket upload your Dataset in csv format:  <br/>
-<img src="image/sg-2.jpg" height="80%" width="80%" alt="TF-IDF Steps"/>
+Select an instance that is sweetable for your AMI to reduce cost:  <br/>
+<img src="image/dl2.png" height="80%" width="80%" alt="TF-IDF Steps"/>
 <br />
 
 <br />
-Creat Model <br/>
-<img src="image/sg-3.jpg" height="80%" width="80%" alt="TF-IDF Steps"/>
+Creat SSH connection between your instance as a turnel through the web you can use  <br/>
+<img src="image/dl3.jpg" height="80%" width="80%" alt="TF-IDF Steps"/>
 <br />
 
 <br />
-Import your dataset into the model from the source(s3):  <br/>
-<img src="image/sg-4.jpg" height="80%" width="80%" alt="TF-IDF Steps"/>
+Configure the connection using Putty:  <br/>
+<img src="image/dl4.jpg" height="80%" width="80%" alt="TF-IDF Steps"/>
 <br />
-select the column you trying to predict:  <br/>
-<img src="image/sg-5.jpg" height="80%" width="80%" alt="TF-IDF Steps"/>
+Open the putty turnel writing "Jupiter Notebook" to have connection through your EC2 instance:  <br/>
+<img src="image/dl5.jpg" height="80%" width="80%" alt="TF-IDF Steps"/>
 <br />
-selcet the Quick build:  <br/>
-<img src="image/sg-6.jpg" height="80%" width="80%" alt="TF-IDF Steps"/>
+Upload your CNN-Tunning Notebook into Jupyter.:  <br/>
+<img src="image/dl6.jpg" height="80%" width="80%" alt="TF-IDF Steps"/>
 <br />
-the below image is your model status/click predict:  <br/>
-<img src="image/sg-7.jpg" height="80%" width="80%" alt="TF-IDF Steps"/>
+Upload raw dataset into jupyter notebook using "shift Enter" or Run button:  <br/>
+<img src="image/dl7.jpg" height="80%" width="80%" alt="TF-IDF Steps"/>
 <br />
-import your predict dataset from (s3):  <br/>
-<img src="image/sg-9.jpg" height="80%" width="80%" alt="TF-IDF Steps"/>
+Reshape the image data to a 2D Array to a floating point format:  <br/>
+<img src="image/dl8.jpg" height="80%" width="80%" alt="TF-IDF Steps"/>
 <br />
-Download your predicted dataset:  <br/>
-<img src="image/sg-10.jpg" height="80%" width="80%" alt="TF-IDF Steps"/>
+Label Data preparation:labels are one-hot encoded converting interger class labels:  <br/>
+<img src="image/dl9.jpg" height="80%" width="80%" alt="TF-IDF Steps"/>
+<br />
+We visualize sample image to confirm prper formattingt and scaling ensuring that data is prepared correctly for input into CNN:  <br/>
+<img src="image/dl10.jpg" height="80%" width="80%" alt="TF-IDF Steps"/>
+<br />
+structure of our Neural Network to be:  <br/>
+<img src="image/dl11.jpg" height="80%" width="80%" alt="TF-IDF Steps"/>
+<br />
+To compile the model, we need a loss Function and an optimizer for this multi class classification task,we use categorica; cross_entering as the loss function:  <br/>
+<img src="image/dl12.jpg" height="80%" width="80%" alt="TF-IDF Steps"/>
+<br />
+Train your Model:  <br/>
+<img src="image/dl13.jpg" height="80%" width="80%" alt="TF-IDF Steps"/>
+<br />
+From the Model result of the trained data the accuracy of the trained data is increased compare to that of the test data that a sign of overfitting:  <br/>
+<img src="image/dl14.jpg" height="80%" width="80%" alt="TF-IDF Steps"/>
+<br />
+To prevent overfitting we going to use a tecdhnique known as Regulirizaton,Dropout :  <br/>
+<img src="image/dl15.jpg" height="80%" width="80%" alt="TF-IDF Steps"/>
+<br />
+Test the accuracy of your Data:  <br/>
+<img src="image/dl16.jpg" height="80%" width="80%" alt="TF-IDF Steps"/>
 </p>
 
 <!--
