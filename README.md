@@ -56,37 +56,37 @@ Open the putty turnel writing "Jupiter Notebook" to have connection through your
 <img src="image/dl5.jpg" height="80%" width="80%" alt="TF-IDF Steps"/>
 <br />
 Upload your CNN-Tunning Notebook into Jupyter.:  <br/>
-<img src="image/dl6.jpg" height="80%" width="80%" alt="TF-IDF Steps"/>
+<img src="image/dl6.jpg" height="80%" width="80%" alt="TUNNING-Steps"/>
 <br />
 Upload raw dataset into jupyter notebook using "shift Enter" or Run button:  <br/>
-<img src="image/dl7.jpg" height="80%" width="80%" alt="TF-IDF Steps"/>
+<img src="image/dl7.jpg" height="80%" width="80%" alt="TUNNING-Steps"/>
 <br />
 Reshape the image data to a 2D Array to a floating point format:  <br/>
-<img src="image/dl8.jpg" height="80%" width="80%" alt="TF-IDF Steps"/>
+<img src="image/dl8.jpg" height="80%" width="80%" alt="TUNNING-Steps"/>
 <br />
 Label Data preparation:labels are one-hot encoded converting interger class labels:  <br/>
-<img src="image/dl9.jpg" height="80%" width="80%" alt="TF-IDF Steps"/>
+<img src="image/dl9.jpg" height="80%" width="80%" alt="TUNNING-Steps"/>
 <br />
 We visualize sample image to confirm prper formattingt and scaling ensuring that data is prepared correctly for input into CNN:  <br/>
-<img src="image/dl10.jpg" height="80%" width="80%" alt="TF-IDF Steps"/>
+<img src="image/dl10.jpg" height="80%" width="80%" alt="TUNNING-Steps"/>
 <br />
 structure of our Neural Network to be:  <br/>
-<img src="image/dl11.jpg" height="80%" width="80%" alt="TF-IDF Steps"/>
+<img src="image/dl11.jpg" height="80%" width="80%" alt="TUNNING-Steps"/>
 <br />
 To compile the model, we need a loss Function and an optimizer for this multi class classification task,we use categorica; cross_entering as the loss function:  <br/>
-<img src="image/dl12.jpg" height="80%" width="80%" alt="TF-IDF Steps"/>
+<img src="image/dl12.jpg" height="80%" width="80%" alt="TUNNING-Steps"/>
 <br />
 Train your Model:  <br/>
-<img src="image/dl13.jpg" height="80%" width="80%" alt="TF-IDF Steps"/>
+<img src="image/dl13.jpg" height="80%" width="80%" alt="TUNNING-Steps"/>
 <br />
 From the Model result of the trained data the accuracy of the trained data is increased compare to that of the test data that a sign of overfitting:  <br/>
-<img src="image/dl14.jpg" height="80%" width="80%" alt="TF-IDF Steps"/>
+<img src="image/dl14.jpg" height="80%" width="80%" alt="TUNNING-Steps"/>
 <br />
 To prevent overfitting we going to use a tecdhnique known as Regulirizaton,Dropout :  <br/>
-<img src="image/dl15.jpg" height="80%" width="80%" alt="TF-IDF Steps"/>
+<img src="image/dl15.jpg" height="80%" width="80%" alt="TUNNING-Steps"/>
 <br />
 Test the accuracy of your Data:  <br/>
-<img src="image/dl16.jpg" height="80%" width="80%" alt="TF-IDF Steps"/>
+<img src="image/dl16.jpg" height="80%" width="80%" alt="TUNNING-Steps"/>
 </p>
 
 <!--
